@@ -9,12 +9,12 @@
     <script src="https://kit.fontawesome.com/65163fd434.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <!-- 1 - Header-->
     <header>
         <section class="header-info">
+            <button id="nightmode-btn"><i class="fa fa-moon"></i></button>
             <h1>Federico Álvarez</h1>
-            <h2>Jr. Security Analyst</h2>
+            <h2>/ <span id="blinking-phrase">Jr. Security Analyst</span></h2>
 
             <h3><img src="img/kood.png" alt="Kood Johvi logo"><span>kood/Jõhvi</span>  alumni</h3>
 
@@ -59,9 +59,38 @@
             </article>
         </div>
     </section>
-    <!-- 3 - Footer -->
+    <!-- 3 - Profile -->
+
+    <section id="profile">
+        <div class="profile-icons">
+            <div class="profile-sheet">
+                <i class="fa fa-lock" id="profile-icon-1"></i>
+                <h3>Security Analyst</h3>
+                <p>3 Projects</p>
+            </div>
+
+            <div class="profile-sheet">
+                <i class="fa fa-network-wired" id="profile-icon-2"></i>
+                <h3>Networking</h3>
+                <p>7 Cisco Labs</p>
+            </div>
+
+            <div class="profile-sheet">
+                <i class="fa fa-code" id="profile-icon-3"></i>
+                <h3>Software Development</h3>
+                <p>Golang, Javascript, C</p>
+            </div>
+
+            
+        </div>
+        <div class="profile-context">
+            
+        </div>
+    </section>
     <footer>
         <p>Federico Álvarez &copy; 2023</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
