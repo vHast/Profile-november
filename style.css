@@ -41,6 +41,9 @@ header .header-info h3 {
   align-items: center;
   font-size: 1.9rem;
 }
+header .header-info h3 span {
+  color: yellowgreen;
+}
 header .header-info h3 img {
   margin: 0 0.5rem;
   width: 40px;
