@@ -148,6 +148,9 @@ header .header-certs img {
   margin-left: 0rem;
   margin-right: 1rem;
 }
+#blogs #second-article article .img-article {
+  background-image: url(/img/blog2.jpg);
+}
 
 footer {
   margin-top: 1rem;
