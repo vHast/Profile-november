@@ -4,14 +4,18 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: rgb(0, 0, 0);
 }
 
 header {
+  background-image: url(/img/testbckg2.jpg);
   animation: fadeIn 1s;
   height: 100vh;
-  background: rgb(22, 22, 22);
   color: white;
   display: flex;
   align-items: center;
@@ -73,4 +77,72 @@ header .header-certs img {
   padding: 2rem;
   width: 100px;
   height: 100px;
+}
+
+#blogs {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#blogs h1 {
+  padding: 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+#blogs .article-container article {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  align-items: center;
+}
+#blogs .article-container article .img-article {
+  height: 170px;
+  width: 300px;
+  background-image: url(/img/blog1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#blogs .article-container article .img-article a {
+  color: white;
+  font-size: 1.6rem;
+  background-color: rgba(0, 153, 255, 0.788);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+#blogs .article-container article .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+  padding: 0 2rem;
+  width: 700px;
+  height: 170px;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  border-radius: 10px;
+  border: 2px rgb(43, 168, 226) solid;
+}
+#blogs .article-container article .content p {
+  padding-top: 0.5rem;
+}
+#blogs #second-article article .content {
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  background-color: rgb(26, 26, 26);
 }/*# sourceMappingURL=style.css.map */
