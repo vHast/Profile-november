@@ -56,4 +56,41 @@
         }
     }
 
+    // * 2 - Articles
+
+    #blogs {
+        height: fit-content;
+
+        .article-container {
+            display: flex;
+            justify-content: center;
+
+            article {
+                flex-direction: column;
+                height: fit-content;
+                width: 70%;
+
+                .img-article {
+                    margin: 1rem 0rem;
+                }
+
+                .content {
+                    height: fit-content;
+                    width: 80%;
+                    margin-left: 0rem;
+                    padding: 1rem;
+                }
+            }
+        }
+        
+        #second-article {
+            article {
+                flex-direction: column-reverse;
+                .content {
+                    margin-right: 0rem;
+                }
+            }
+        }
+    }
+
 }

@@ -35,7 +35,11 @@ header .header-info {
 header .header-info h1, header .header-info h2 {
   margin: 0 10rem;
 }
+header .header-info h1 {
+  font-size: 5.5rem;
+}
 header .header-info h2 {
+  font-family: monospace;
   font-size: 2.5rem;
   color: rgb(218, 218, 218);
 }
@@ -80,7 +84,7 @@ header .header-certs img {
 }
 
 #blogs {
-  height: 70vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   flex-direction: column;
