@@ -2,24 +2,24 @@
     // Reset
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Hedvig Letters Sans', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 
 // * 1 - Header
 
 header {
-    background-image: url(/img/testbckg2.jpg);
+    background-color: white;
     animation: fadeIn 1s;
-    height: 100vh;
-    color: white;
+    height: 87vh;
+    color: black;
     display: flex;
     align-items: center;
 
@@ -47,7 +47,7 @@ header {
         h2 {
             font-family: monospace;
             font-size: 2.5rem;
-            color: rgb(218, 218, 218);
+            color: rgb(49, 49, 49);
         }
         h3 {
             margin: 1rem 0rem 0rem 10rem;
@@ -57,6 +57,7 @@ header {
 
             span {
                 color: yellowgreen;
+                padding: 0rem 1rem 0rem 0.2rem;
             }
 
             img {
@@ -65,20 +66,53 @@ header {
                 height: 40px;
                 border-radius: 15px;
             }
+
+            a {
+                padding-left: 0.3rem;
+            }
+        }
+
+        h4 {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 1rem 0rem 0rem 10rem;
+
+            span {
+                padding-right: 0.5rem;
+                color: green;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+                
+            }
+
+            a {
+                margin-left: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
         }
 
         .header-socials {
             padding-left: 0.5rem;
             margin: 2rem 10rem;
-            color: white;
+            display: flex;
+            align-items: center;
             
+            a {
+                padding: 0rem 0.5rem;
+            }
             #linkedin-link {
                 color: rgb(38, 214, 185);
             }
 
             #git-link {
-                color: white;
+                color: rgb(0, 0, 0);
+                padding-right: 1rem;
             }
+
             i {
                 font-size: 2.4rem;
             }
@@ -86,8 +120,8 @@ header {
         }
 
         #nightmode-btn {
-            color: white;
-            background-color: black;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             border: 2px solid;
             position: absolute;
             top: 1rem;
@@ -114,163 +148,68 @@ header {
     }
 }
 
-// * 2 - Articles
-#blogs {
-    height: 65vh;
-    // background-color: rgb(51, 255, 0);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
+// Short Description
+#main-banner {
+    margin: 0rem 20%;
+
     h1 {
-        padding: 1.5rem;
-        color: white;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
-    .article-container {
-        // background-color: green;
-        article {
-            // background-color: yellow;
-            margin-top: 1rem;
-            display: flex;
-            flex-direction: row;
-            height: 170px;
-            align-items: center;
+    .skills-container {
+        padding: 0 5%;
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template: auto;
+        grid-template-areas:
+        "skill-one skill-two skill-three"
+        "skill-four skill-five skill-six";
 
-            .img-article {
-                height: 170px;
-                width: 300px;
-                background-image: url(/img/blog1.jpg);
-                background-position: center;
-                background-size: cover;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                :hover {
-                    background-color: rgba(0, 63, 88, 0.788);
-                    transition: 0.5s;
-                }
-
-                :not(:hover) {
-                    background-color: rgba(0, 153, 255, 0.788);
-                    transition: 0.5s;
-                }
-                
-                a {
-                    color: white;
-                    text-shadow: 5px 5px 10px black;
-                    font-size: 1.6rem;
-                    padding: 0.8rem;
-                    border-radius: 10px;
-
-                }
-            }
-
-            .content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-left: 1rem;
-                padding: 0 2rem;
-                width: 700px;
-                height: 170px;
-                background-color: rgb(22, 22, 22);
-                color: white;
-                border-radius: 10px;
-                border: 2px rgb(36, 111, 146) solid;
-
-                p {
-                    padding-top: 0.5rem;
-                }
-            }
+        #skill-one {
+            grid-area: skill-one;
         }
-    }
 
-    #second-article {
-        article {
-            .content {
-                margin-left: 0rem;
-                margin-right: 1rem;
-            }
+        #skill-two {
+            grid-area: skill-two;
+        }
 
-            .img-article {
-                background-image: url(/img/blog2.jpg);
+        #skill-three {
+            grid-area: skill-three;
+        }
 
+        #skill-four {
+            grid-area: skill-four;
+        }
+
+        #skill-five {
+            grid-area: skill-five;
+        }
+
+        #skill-six {
+            grid-area: skill-six;
+        }
+
+        .skill-unit {
+            height: 15rem;
+            display: flex;
+            margin: 1.5rem 2rem;
+            border-top: 3px orange solid;
+            border-radius: 5px;
+            background-color: rgb(248, 248, 248);
+
+            h1 {
+                padding: 0.5rem 1rem;
             }
         }
     }
 }
 
-// * 3 - Profile 
 
-#profile {
-    height: 50vh;
-    display: flex;
 
-    .profile-icons {
-        width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        .profile-sheet {
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(218, 218, 218);
-            margin-left: 2rem;
-            width: 170px;
-            height: 240px;
-            border-radius: 25px;
-            box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5);
-
-            i {
-                padding-top: 4.2rem;
-                text-align: center;
-                font-size: 3rem;
-                color: white;
-            }
-
-            h3 {
-                text-align: center;
-                padding-top: 1rem;
-            }
-
-            p {
-                text-align: center;
-            }
-        }
-
-        #profile-icon-1 {
-            color: rgb(117, 11, 11);
-            text-shadow: 0px 0px 15px red;
-        }
-
-        #profile-icon-2 {
-            color: rgb(11, 117, 108);
-            text-shadow: 0px 0px 15px rgb(147, 255, 114);
-        }
-
-        #profile-icon-3 {
-            color: rgb(20, 194, 238);
-            text-shadow: 0px 0px 15px rgb(124, 235, 255);
-        }
-    }
-
-    .profile-context {
-        height: 100%;
-        background-color: blue;
-        width: 40%;
-    }
-}
 // Footer
 
 footer {
-    margin-top: 1rem;
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem 0rem;

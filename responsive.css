@@ -43,34 +43,4 @@
     width: 60px;
     height: 60px;
   }
-  #blogs {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  #blogs .article-container {
-    display: flex;
-    justify-content: center;
-  }
-  #blogs .article-container article {
-    flex-direction: column;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 70%;
-  }
-  #blogs .article-container article .img-article {
-    margin: 1rem 0rem;
-  }
-  #blogs .article-container article .content {
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 80%;
-    margin-left: 0rem;
-    padding: 1rem;
-  }
-  #blogs #second-article article {
-    flex-direction: column-reverse;
-  }
-  #blogs #second-article article .content {
-    margin-right: 0rem;
-  }
 }/*# sourceMappingURL=responsive.css.map */

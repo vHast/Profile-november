@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Hedvig Letters Sans", sans-serif;
 }
 
 a {
@@ -9,14 +9,14 @@ a {
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: white;
 }
 
 header {
-  background-image: url(/img/testbckg2.jpg);
+  background-color: white;
   animation: fadeIn 1s;
-  height: 100vh;
-  color: white;
+  height: 87vh;
+  color: black;
   display: flex;
   align-items: center;
 }
@@ -44,7 +44,7 @@ header .header-info h1 {
 header .header-info h2 {
   font-family: monospace;
   font-size: 2.5rem;
-  color: rgb(218, 218, 218);
+  color: rgb(49, 49, 49);
 }
 header .header-info h3 {
   margin: 1rem 0rem 0rem 10rem;
@@ -54,6 +54,7 @@ header .header-info h3 {
 }
 header .header-info h3 span {
   color: yellowgreen;
+  padding: 0rem 1rem 0rem 0.2rem;
 }
 header .header-info h3 img {
   margin: 0 0.5rem;
@@ -61,23 +62,49 @@ header .header-info h3 img {
   height: 40px;
   border-radius: 15px;
 }
+header .header-info h3 a {
+  padding-left: 0.3rem;
+}
+header .header-info h4 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 1rem 0rem 0rem 10rem;
+}
+header .header-info h4 span {
+  padding-right: 0.5rem;
+  color: green;
+}
+header .header-info h4 img {
+  width: 40px;
+  height: 40px;
+}
+header .header-info h4 a {
+  margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 header .header-info .header-socials {
   padding-left: 0.5rem;
   margin: 2rem 10rem;
-  color: white;
+  display: flex;
+  align-items: center;
+}
+header .header-info .header-socials a {
+  padding: 0rem 0.5rem;
 }
 header .header-info .header-socials #linkedin-link {
   color: rgb(38, 214, 185);
 }
 header .header-info .header-socials #git-link {
-  color: white;
+  color: rgb(0, 0, 0);
+  padding-right: 1rem;
 }
 header .header-info .header-socials i {
   font-size: 2.4rem;
 }
 header .header-info #nightmode-btn {
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   border: 2px solid;
   position: absolute;
   top: 1rem;
@@ -99,130 +126,51 @@ header .header-certs img {
   height: 100px;
 }
 
-#blogs {
-  height: 65vh;
+#main-banner {
+  margin: 0rem 20%;
+}
+#main-banner h1 {
+  font-size: 1.8rem;
+}
+#main-banner .skills-container {
+  padding: 0 5%;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template: auto;
+  grid-template-areas: "skill-one skill-two skill-three" "skill-four skill-five skill-six";
+}
+#main-banner .skills-container #skill-one {
+  grid-area: skill-one;
+}
+#main-banner .skills-container #skill-two {
+  grid-area: skill-two;
+}
+#main-banner .skills-container #skill-three {
+  grid-area: skill-three;
+}
+#main-banner .skills-container #skill-four {
+  grid-area: skill-four;
+}
+#main-banner .skills-container #skill-five {
+  grid-area: skill-five;
+}
+#main-banner .skills-container #skill-six {
+  grid-area: skill-six;
+}
+#main-banner .skills-container .skill-unit {
+  height: 15rem;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  margin: 1.5rem 2rem;
+  border-top: 3px orange solid;
+  border-radius: 5px;
+  background-color: rgb(248, 248, 248);
 }
-#blogs h1 {
-  padding: 1.5rem;
-  color: white;
-  font-size: 2rem;
-}
-#blogs .article-container article {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  height: 170px;
-  align-items: center;
-}
-#blogs .article-container article .img-article {
-  height: 170px;
-  width: 300px;
-  background-image: url(/img/blog1.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#blogs .article-container article .img-article :hover {
-  background-color: rgba(0, 63, 88, 0.788);
-  transition: 0.5s;
-}
-#blogs .article-container article .img-article :not(:hover) {
-  background-color: rgba(0, 153, 255, 0.788);
-  transition: 0.5s;
-}
-#blogs .article-container article .img-article a {
-  color: white;
-  text-shadow: 5px 5px 10px black;
-  font-size: 1.6rem;
-  padding: 0.8rem;
-  border-radius: 10px;
-}
-#blogs .article-container article .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 1rem;
-  padding: 0 2rem;
-  width: 700px;
-  height: 170px;
-  background-color: rgb(22, 22, 22);
-  color: white;
-  border-radius: 10px;
-  border: 2px rgb(36, 111, 146) solid;
-}
-#blogs .article-container article .content p {
-  padding-top: 0.5rem;
-}
-#blogs #second-article article .content {
-  margin-left: 0rem;
-  margin-right: 1rem;
-}
-#blogs #second-article article .img-article {
-  background-image: url(/img/blog2.jpg);
-}
-
-#profile {
-  height: 50vh;
-  display: flex;
-}
-#profile .profile-icons {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#profile .profile-icons .profile-sheet {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(218, 218, 218);
-  margin-left: 2rem;
-  width: 170px;
-  height: 240px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.5);
-}
-#profile .profile-icons .profile-sheet i {
-  padding-top: 4.2rem;
-  text-align: center;
-  font-size: 3rem;
-  color: white;
-}
-#profile .profile-icons .profile-sheet h3 {
-  text-align: center;
-  padding-top: 1rem;
-}
-#profile .profile-icons .profile-sheet p {
-  text-align: center;
-}
-#profile .profile-icons #profile-icon-1 {
-  color: rgb(117, 11, 11);
-  text-shadow: 0px 0px 15px red;
-}
-#profile .profile-icons #profile-icon-2 {
-  color: rgb(11, 117, 108);
-  text-shadow: 0px 0px 15px rgb(147, 255, 114);
-}
-#profile .profile-icons #profile-icon-3 {
-  color: rgb(20, 194, 238);
-  text-shadow: 0px 0px 15px rgb(124, 235, 255);
-}
-#profile .profile-context {
-  height: 100%;
-  background-color: blue;
-  width: 40%;
+#main-banner .skills-container .skill-unit h1 {
+  padding: 0.5rem 1rem;
 }
 
 footer {
-  margin-top: 1rem;
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem 0rem;
