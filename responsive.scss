@@ -34,6 +34,7 @@
             align-items: center;
 
             h1, h2 {
+                padding: 0rem 1rem;
                 margin: 0px;
             }
 
@@ -94,6 +95,29 @@
         "skill-four"
         "skill-five"
         "skill-six"
+        }
+    }
+
+    #tools-banner {
+
+        margin: 0rem 20%;
+        height: fit-content;
+    
+        h1 {
+            font-size: 1.8rem;
+        }
+    
+        .tools-container {
+            margin: 2rem 0rem;
+            padding: 0rem 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                padding: 5px;
+                width: 60px;
+            }
         }
     }
 }

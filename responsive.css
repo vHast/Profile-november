@@ -26,6 +26,7 @@
     align-items: center;
   }
   header .header-info h1, header .header-info h2 {
+    padding: 0rem 1rem;
     margin: 0px;
   }
   header .header-info h1 {
@@ -67,5 +68,24 @@
   }
   #main-banner .skills-container {
     grid-template-areas: "skill-one" "skill-two" "skill-three" "skill-four" "skill-five" "skill-six";
+  }
+  #tools-banner {
+    margin: 0rem 20%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #tools-banner h1 {
+    font-size: 1.8rem;
+  }
+  #tools-banner .tools-container {
+    margin: 2rem 0rem;
+    padding: 0rem 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #tools-banner .tools-container img {
+    padding: 5px;
+    width: 60px;
   }
 }/*# sourceMappingURL=responsive.css.map */

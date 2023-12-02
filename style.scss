@@ -148,7 +148,7 @@ header {
     }
 }
 
-// Short Description
+// 2 - Short Description
 #main-banner {
     animation: fadeIn 2s;
     margin: 0rem 20%;
@@ -208,7 +208,28 @@ header {
     }
 }
 
+// 3 - Tools 
 
+#tools-banner {
+
+    margin: 0rem 20%;
+    height: fit-content;
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .tools-container {
+        margin: 2rem 0rem;
+        padding: 0rem 25%;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+}
 
 // Footer
 
