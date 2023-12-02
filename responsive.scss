@@ -1,3 +1,23 @@
+@media (max-width: 1400px) {
+
+    #main-banner {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    #main-banner {
+        margin: 0 5%;
+
+        .skills-container {
+        grid-template-areas:
+        "skill-one skill-two"
+        "skill-three skill-four"
+        "skill-five skill-six"
+        }
+    }
+}
 @media (max-width: 715px) {
 
     header {
@@ -9,6 +29,9 @@
             text-align: center;
             width: 100vw;
             font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             h1, h2 {
                 margin: 0px;
@@ -29,6 +52,10 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+
+                span {
+                    padding: 0rem 0.2rem 0rem 0rem;
+                }
 
                 img {
                     
@@ -53,6 +80,20 @@
                 width: 60px;
                 height: 60px;
             }
+        }
+    }
+
+    #main-banner {
+        margin: 0 5%;
+
+        .skills-container {
+        grid-template-areas:
+        "skill-one"
+        "skill-two"
+        "skill-three"
+        "skill-four"
+        "skill-five"
+        "skill-six"
         }
     }
 }

@@ -150,6 +150,7 @@ header {
 
 // Short Description
 #main-banner {
+    animation: fadeIn 2s;
     margin: 0rem 20%;
 
     h1 {
@@ -157,8 +158,7 @@ header {
     }
 
     .skills-container {
-        padding: 0 5%;
-        padding-top: 2rem;
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: auto;
         grid-template: auto;
@@ -191,7 +191,8 @@ header {
         }
 
         .skill-unit {
-            height: 15rem;
+            padding: 2rem;
+            height: fit-content;
             display: flex;
             flex-direction: column;
             margin: 1.5rem 2rem;

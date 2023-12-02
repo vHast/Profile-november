@@ -127,14 +127,14 @@ header .header-certs img {
 }
 
 #main-banner {
+  animation: fadeIn 2s;
   margin: 0rem 20%;
 }
 #main-banner h1 {
   font-size: 1.8rem;
 }
 #main-banner .skills-container {
-  padding: 0 5%;
-  padding-top: 2rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: auto;
   grid-template: auto;
@@ -159,7 +159,9 @@ header .header-certs img {
   grid-area: skill-six;
 }
 #main-banner .skills-container .skill-unit {
-  height: 15rem;
+  padding: 2rem;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   margin: 1.5rem 2rem;
