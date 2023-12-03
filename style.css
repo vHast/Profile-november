@@ -12,8 +12,43 @@ body {
   background-color: white;
 }
 
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+body.dark-mode body {
+  background-color: black;
+}
+body.dark-mode header {
+  color: white;
+  background-color: black;
+}
+body.dark-mode header .header-certs {
+  color: white;
+}
+body.dark-mode header #nightmode-btn {
+  color: white;
+  background-color: black;
+}
+body.dark-mode #main-banner h1 {
+  color: white;
+}
+body.dark-mode #main-banner .skills-container .skill-unit {
+  color: white;
+  background-color: rgb(15, 15, 15);
+}
+body.dark-mode #tools-banner h1 {
+  color: white;
+}
+body.dark-mode #blogs-banner .blog-container .blog-unit {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+body.dark-mode #about {
+  color: white;
+}
+
 header {
-  background-color: white;
   animation: fadeIn 1s;
   height: 87vh;
   color: black;

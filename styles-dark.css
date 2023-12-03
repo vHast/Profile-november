@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+}
+
+header {
+  color: white;
+  background-color: black;
+}
+header .header-certs {
+  color: white;
+}
+header #nightmode-btn {
+  color: white;
+  background-color: black;
+}
+
+#main-banner h1 {
+  color: white;
+}
+#main-banner .skills-container .skill-unit {
+  color: white;
+  background-color: rgb(15, 15, 15);
+}
+
+#tools-banner h1 {
+  color: white;
+}
+
+#blogs-banner .blog-container .blog-unit {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+
+#about {
+  color: white;
+}/*# sourceMappingURL=styles-dark.css.map */

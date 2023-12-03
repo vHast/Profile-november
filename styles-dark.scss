@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+header {
+    color: white;
+    background-color: black;
+  
+    .header-certs {
+      color: white;
+    }
+  
+    #nightmode-btn {
+      color: white;
+      background-color: black;
+    }
+  }
+  
+  #main-banner {
+    h1 {
+      color: white;
+    }
+  
+    .skills-container {
+      .skill-unit {
+        color: white;
+        background-color: rgb(15, 15, 15);
+      }
+    }
+  }
+  
+  #tools-banner {
+    h1 {
+      color: white;
+    }
+  }
+  
+  #blogs-banner {
+    .blog-container {
+      .blog-unit {
+        background-color: rgb(15, 15, 15);
+        color: white;
+      }
+    }
+  }
+  
+  #about {
+    color: white;
+  }

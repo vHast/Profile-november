@@ -12,11 +12,16 @@ body {
     background-color: white;
 }
 
+body.dark-mode {
+    background-color: black;
+    color: white;
+
+    @import 'styles-dark';
+}
 
 // * 1 - Header
 
 header {
-    background-color: white;
     animation: fadeIn 1s;
     height: 87vh;
     color: black;
