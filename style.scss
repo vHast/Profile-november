@@ -312,8 +312,13 @@ header {
     p {
         width: 90%;
         padding-top: 1rem;
+
+        .bold {
+            font-weight: bold;
+        }
     }
 }
+
 // Footer
 
 footer {
