@@ -6,6 +6,12 @@ header {
   color: white;
   background-color: black;
 }
+header .header-info h2 {
+  color: gray;
+}
+header .header-socials #git-link i {
+  color: white;
+}
 header .header-certs {
   color: white;
 }

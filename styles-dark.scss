@@ -5,6 +5,20 @@ body {
 header {
     color: white;
     background-color: black;
+
+    .header-info {
+        h2 {
+            color: gray;
+        }
+    }
+
+    .header-socials {
+        #git-link {
+            i {
+                color: white;
+            }
+        }
+    }
   
     .header-certs {
       color: white;
