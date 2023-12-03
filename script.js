@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const nightModeBtn = document.getElementById('nightmode-btn');
     const body = document.body;
     const thmLogo = document.getElementById('thm-logo');
-    const splunkLogo = document.getElementById('splunk-logo')
+    const splunkLogo = document.getElementById('splunk-logo');
+    const ccstLogo = document.getElementById('ccst-logo');
 
     // Function to toggle dark mode
     function toggleDarkMode() {
@@ -32,10 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateThmLogo(isDarkMode) {
         if (isDarkMode) {
             thmLogo.src = '/img/thmlogo-dark.png';
-            splunkLogo.src = '/img/tool-splunk-dark.png'
+            splunkLogo.src = '/img/tool-splunk-dark.png';
+            ccstLogo.src = '/img/ccst-dark.png';
         } else {
             thmLogo.src = '/img/thmlogo.png';
-            splunkLogo.src = '/img/tool-splunk.png'
+            splunkLogo.src = '/img/tool-splunk.png';
+            ccstLogo.src = '/img/ccst.png';
         }
     }
 
