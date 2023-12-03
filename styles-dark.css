@@ -36,6 +36,10 @@ header #nightmode-btn {
   background-color: rgb(15, 15, 15);
   color: white;
 }
+#blogs-banner .blog-container .blog-tags .blog-log {
+  border: 2px blue solid;
+  color: blue;
+}
 
 #about {
   color: white;

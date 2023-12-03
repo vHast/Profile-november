@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nightModeBtn = document.getElementById('nightmode-btn');
     const body = document.body;
     const thmLogo = document.getElementById('thm-logo');
+    const splunkLogo = document.getElementById('splunk-logo')
 
     // Function to toggle dark mode
     function toggleDarkMode() {
@@ -27,12 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Function to update THM logo based on dark mode status
+    // Function to update THM and Splunk logo based on dark mode status
     function updateThmLogo(isDarkMode) {
         if (isDarkMode) {
             thmLogo.src = '/img/thmlogo-dark.png';
+            splunkLogo.src = '/img/tool-splunk-dark.png'
         } else {
-            thmLogo.src = '/img/thmlogo.png'; // Original URL for light mode
+            thmLogo.src = '/img/thmlogo.png';
+            splunkLogo.src = '/img/tool-splunk.png'
         }
     }
 
