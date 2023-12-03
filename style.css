@@ -200,6 +200,10 @@ header .header-certs img {
   height: -moz-fit-content;
   height: fit-content;
 }
+#blogs-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
 #blogs-banner h1 {
   font-size: 1.8rem;
 }
@@ -246,6 +250,20 @@ header .header-certs img {
 #blogs-banner .blog-container .blog-tags .blog-python {
   border: 2px rgb(38, 226, 38) solid;
   color: rgb(38, 226, 38);
+}
+
+#about {
+  margin: 3rem 20%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#about p {
+  width: 90%;
+  padding-top: 1rem;
 }
 
 footer {
