@@ -10,6 +10,9 @@
   #main-banner .skills-container {
     grid-template-areas: "skill-one skill-two" "skill-three skill-four" "skill-five skill-six";
   }
+  #blogs-banner {
+    margin: 0rem 5%;
+  }
 }
 @media (max-width: 715px) {
   header {
@@ -87,5 +90,23 @@
   #tools-banner .tools-container img {
     padding: 5px;
     width: 60px;
+  }
+  #blogs-banner .blog-container {
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+  }
+  #blogs-banner .blog-container .blog-unit {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 90%;
+  }
+  #blogs-banner .blog-container .blog-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #blogs-banner .blog-container .blog-tags p {
+    margin: 5px;
   }
 }/*# sourceMappingURL=responsive.css.map */

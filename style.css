@@ -195,7 +195,61 @@ header .header-certs img {
   height: fit-content;
 }
 
+#blogs-banner {
+  margin: 0rem 20%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#blogs-banner h1 {
+  font-size: 1.8rem;
+}
+#blogs-banner .blog-container {
+  display: flex;
+}
+#blogs-banner .blog-container .blog-unit {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 1rem;
+  border-top: 5px blue solid;
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+}
+#blogs-banner .blog-container .blog-unit p {
+  padding-top: 0.8rem;
+}
+#blogs-banner .blog-container .blog-unit a {
+  font-weight: bold;
+  margin-top: 1rem;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  border-radius: 5px;
+}
+#blogs-banner .blog-container .blog-tags {
+  padding-left: 1rem;
+}
+#blogs-banner .blog-container .blog-tags p {
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+#blogs-banner .blog-container .blog-tags .blog-date {
+  color: gray;
+}
+#blogs-banner .blog-container .blog-tags .blog-log {
+  border: 2px rgb(21, 21, 105) solid;
+  color: rgb(21, 21, 105);
+}
+#blogs-banner .blog-container .blog-tags .blog-python {
+  border: 2px rgb(38, 226, 38) solid;
+  color: rgb(38, 226, 38);
+}
+
 footer {
+  margin-top: 1rem;
   font-size: 0.8rem;
   text-align: center;
   padding: 1rem 0rem;

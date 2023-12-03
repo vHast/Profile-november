@@ -17,6 +17,10 @@
         "skill-five skill-six"
         }
     }
+
+    #blogs-banner {
+        margin: 0rem 5%;
+    }
 }
 @media (max-width: 715px) {
 
@@ -117,6 +121,29 @@
             img {
                 padding: 5px;
                 width: 60px;
+            }
+        }
+    }
+
+    #blogs-banner {
+        .blog-container {
+            margin-top: 2rem;
+            flex-direction: column-reverse;
+
+            .blog-unit {
+                justify-content: center;
+                align-items: center;
+                margin-top: 0.5rem;
+                width: 90%;
+            }
+
+            .blog-tags {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                    margin: 5px;
+                }
             }
         }
     }
