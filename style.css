@@ -12,56 +12,21 @@ body {
   background-color: white;
 }
 
+h1, h2 {
+  color: white;
+}
+
 body.dark-mode {
   background-color: black;
   color: white;
 }
-body.dark-mode body {
-  background-color: black;
-}
-body.dark-mode header {
-  color: white;
-  background-color: black;
-}
-body.dark-mode header .header-info h2 {
-  color: gray;
-}
-body.dark-mode header .header-socials #git-link i {
-  color: white;
-}
-body.dark-mode header .header-certs {
-  color: white;
-}
-body.dark-mode header #nightmode-btn {
-  color: white;
-  background-color: black;
-}
-body.dark-mode #main-banner h1 {
-  color: white;
-}
-body.dark-mode #main-banner .skills-container .skill-unit {
-  color: white;
-  background-color: rgb(15, 15, 15);
-}
-body.dark-mode #tools-banner h1 {
-  color: white;
-}
-body.dark-mode #blogs-banner .blog-container .blog-unit {
-  background-color: rgb(15, 15, 15);
-  color: white;
-}
-body.dark-mode #blogs-banner .blog-container .blog-tags .blog-log {
-  border: 2px blue solid;
-  color: blue;
-}
-body.dark-mode #about {
-  color: white;
-}
 
 header {
+  background-image: url(/img/dark.jpg);
+  background-position: bottom;
   animation: fadeIn 1s;
   height: 87vh;
-  color: black;
+  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
 }
@@ -75,6 +40,22 @@ header {
 }
 header .header-info {
   width: 70%;
+  /* #nightmode-btn {
+      color: rgb(0, 0, 0);
+      background-color: rgb(233, 233, 233);
+      border: 2px solid;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      border-radius: 5px;
+
+      i {
+          font-size: 1.1rem;
+          padding: 0.8rem;
+      }
+  }
+
+  */
 }
 header .header-info #blinking-phrase {
   display: inline-block;
@@ -82,6 +63,7 @@ header .header-info #blinking-phrase {
 }
 header .header-info h1, header .header-info h2 {
   margin: 0 10rem;
+  text-shadow: black 15px 0px 15px;
 }
 header .header-info h1 {
   font-size: 5.5rem;
@@ -89,7 +71,7 @@ header .header-info h1 {
 header .header-info h2 {
   font-family: monospace;
   font-size: 2.5rem;
-  color: rgb(49, 49, 49);
+  color: rgb(182, 182, 182);
 }
 header .header-info h3 {
   margin: 1rem 0rem 0rem 10rem;
@@ -138,29 +120,17 @@ header .header-info .header-socials a {
   padding: 0rem 0.5rem;
 }
 header .header-info .header-socials #linkedin-link {
-  color: rgb(38, 214, 185);
+  color: rgb(15, 132, 179);
 }
 header .header-info .header-socials #git-link {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding-right: 1rem;
 }
 header .header-info .header-socials i {
   font-size: 2.4rem;
 }
-header .header-info #nightmode-btn {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  border: 2px solid;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  border-radius: 5px;
-}
-header .header-info #nightmode-btn i {
-  font-size: 1.1rem;
-  padding: 0.8rem;
-}
 header .header-certs {
+  text-shadow: black 15px 0px 15px;
   padding-top: 1rem;
   width: 30%;
   text-align: center;
@@ -212,7 +182,7 @@ header .header-certs img {
   margin: 1.5rem 2rem;
   border-top: 3px orange solid;
   border-radius: 5px;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(19, 19, 19);
   justify-content: space-around;
 }
 #main-banner .skills-container .skill-unit h1, #main-banner .skills-container .skill-unit p {
@@ -261,7 +231,7 @@ header .header-certs img {
   width: 800px;
   padding: 1rem;
   border-top: 5px blue solid;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(24, 24, 24);
   border-radius: 5px;
 }
 #blogs-banner .blog-container .blog-unit p {
