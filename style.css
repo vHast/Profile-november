@@ -188,6 +188,9 @@ header .header-certs img {
 #main-banner .skills-container .skill-unit h1, #main-banner .skills-container .skill-unit p {
   padding: 0.5rem 1rem;
 }
+#main-banner .skills-container #skill-two, #main-banner .skills-container #skill-four, #main-banner .skills-container #skill-six {
+  border-top: 3px rgb(255, 81, 0) solid;
+}
 
 #tools-banner {
   margin: 0rem 20%;
